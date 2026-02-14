@@ -53,7 +53,7 @@ resource "aws_instance" "ec2" {
   ami                         = var.ami_id
   instance_type               = var.instance_type
   subnet_id                   = data.aws_subnets.default_in_vpc.ids[0]
-  vpc_security_group_ids      = [aws_security_group.ec2_sg.id]
+  vpc_security_group_ids      = ["sg-0407691880d16c617"]
   associate_public_ip_address = true
   key_name = var.existing_key_pair_name
   tags = {
