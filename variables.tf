@@ -22,3 +22,8 @@ variable "allowed_ssh_cidr" {
   type    = string
   default = "0.0.0.0/0"
 }
+
+variable "ami_id" {
+  description = "AMI ID for EC2 instance"
+  type        = string
+}
